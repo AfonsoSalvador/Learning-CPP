@@ -1,0 +1,25 @@
+referencia em lista:
+    se ele deixa so "Departamento" ele faz uma lista de COPIAS
+    se ele faz "Departamento*" ele faz uma lista de ponteiros para departamentos
+
+const:
+    é uma forma de garantir que ou o parametro ou o resultado não deverá ser alterado, isso é utilizado para proteger variaveis e não correr o risco de mudalo não-intecionalmente
+
+
+    exemplo:
+
+
+    garante que a saida tem que ser protegida
+    \/
+    const list<Departamento*> getDepartamentos() const;
+                                                    /\
+                                garante que a entrada não vai ser modificada durante a função
+
+
+foward declaration: 
+    uma forma de lidar com includes ciclicos em seu codigo, pelo menos uma das direções da referencia tem que ser por meio de ponteiro mas, por convenção, é utilizado ponteiro em AMBAS as direções.
+
+
+
+código para compilação:
+    g++ -std=c++17 -o main *.cpp
